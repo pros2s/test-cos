@@ -71,7 +71,7 @@
 .cards__sep {
   width: 1px;
   height: 16px;
-  background: var(--bg);
+  background: var(--color-secondary);
 }
 
 .cards__author {

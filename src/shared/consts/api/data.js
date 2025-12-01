@@ -23,7 +23,7 @@ export const CARD_DATA = [
   {
     id: 1,
     img: ImgMan5,
-    name: 'Prduct Management Fundamentals',
+    name: 'Product Management Fundamentals',
     bag: management,
     price: '$480',
     author: 'Marvin McKinney',

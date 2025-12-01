@@ -1,4 +1,5 @@
 import { CARD_BAG_SELECTOR, CARD_ELEMENT_SELECTOR, CARDS_SELECTOR } from '@/shared/consts/selectors/cards';
+import { cardToggleByMatch } from '@/shared/utils/cardToggleByMatch';
 
 export const filterCardList = (curFilterBag) => {
   const cardsBlock = document.querySelector(CARDS_SELECTOR);
@@ -9,10 +10,6 @@ export const filterCardList = (curFilterBag) => {
     const elemText = elemBag.textContent.toLowerCase();
 
     const isMatchFilter = elemText === curFilterBag || curFilterBag === 'all';
-    if (isMatchFilter) {
-      elem.removeAttribute('style');
-    } else {
-      elem.style = 'display: none;';
-    }
+    cardToggleByMatch(elem, isMatchFilter);
   });
 };

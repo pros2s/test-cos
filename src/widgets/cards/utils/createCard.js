@@ -1,4 +1,9 @@
-import { CARDS_SELECTOR } from '@/shared/consts/selectors/cards';
+import {
+  CARD_BAG_SELECTOR,
+  CARD_ELEMENT_SELECTOR,
+  CARD_NAME_SELECTOR,
+  CARDS_SELECTOR,
+} from '@/shared/consts/selectors/cards';
 import { getCardBagColor } from './getCardBagColor';
 
 export const createCard = (card) => {
@@ -7,7 +12,7 @@ export const createCard = (card) => {
   const cardsBlock = document.querySelector(CARDS_SELECTOR);
 
   const cardBlock = document.createElement('div');
-  cardBlock.className = 'cards__elem';
+  cardBlock.className = CARD_ELEMENT_SELECTOR.slice(1);
   cardsBlock.appendChild(cardBlock);
 
   const cardImg = document.createElement('img');
@@ -20,14 +25,14 @@ export const createCard = (card) => {
   cardBlock.appendChild(infoBlock);
 
   const bagElem = document.createElement('span');
-  bagElem.className = 'cards__bag';
+  bagElem.className = CARD_BAG_SELECTOR.slice(1);
   bagElem.classList.add(getCardBagColor(bag));
   bagElem.textContent = bag;
   infoBlock.appendChild(bagElem);
 
   const nameElem = document.createElement('p');
   nameElem.textContent = name;
-  nameElem.className = 'cards__name';
+  nameElem.className = CARD_NAME_SELECTOR.slice(1);
   infoBlock.appendChild(nameElem);
 
   const postInfoBlock = document.createElement('div');
