@@ -1,0 +1,22 @@
+.container {
+  padding: 44px 345px 86px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__subtitle {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.header__title {
+  font-size: 2.875rem;
+  font-weight: 900;
+  line-height: 130%;
+}
