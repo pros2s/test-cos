@@ -4,6 +4,7 @@
 
 @import '../src/pages/course/course.css';
 
+/* fonts */
 @font-face {
   font-family: Lato;
   font-weight: 400;
@@ -21,6 +22,26 @@
   font-family: Lato;
   font-weight: 900;
   src: url('../src/shared/assets/fonts/Lato-Black.ttf');
+}
+
+/* backgounds */
+.background-img {
+  position: absolute;
+
+  &.dots {
+    top: 50px;
+    right: 0;
+  }
+
+  &.shapes {
+    top: 65%;
+    left: 20px;
+  }
+
+  &.shapes1 {
+    top: 108%;
+    right: 20px;
+  }
 }
 
 /* reset everything */

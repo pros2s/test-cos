@@ -1,12 +1,12 @@
-import ImgMan1 from '@/shared/assets/imgs/man1.jpg';
-import ImgMan2 from '@/shared/assets/imgs/man2.jpg';
-import ImgMan3 from '@/shared/assets/imgs/man3.jpg';
-import ImgMan4 from '@/shared/assets/imgs/man4.jpg';
-import ImgMan5 from '@/shared/assets/imgs/man5.jpg';
-import ImgMan6 from '@/shared/assets/imgs/man6.jpg';
-import ImgGirl1 from '@/shared/assets/imgs/girl1.jpg';
-import ImgGirl2 from '@/shared/assets/imgs/girl2.jpg';
-import ImgGirl3 from '@/shared/assets/imgs/girl3.jpg';
+import ImgMan1 from '@/shared/assets/imgs/people/man1.jpg';
+import ImgMan2 from '@/shared/assets/imgs/people/man2.jpg';
+import ImgMan3 from '@/shared/assets/imgs/people/man3.jpg';
+import ImgMan4 from '@/shared/assets/imgs/people/man4.jpg';
+import ImgMan5 from '@/shared/assets/imgs/people/man5.jpg';
+import ImgMan6 from '@/shared/assets/imgs/people/man6.jpg';
+import ImgGirl1 from '@/shared/assets/imgs/people/girl1.jpg';
+import ImgGirl2 from '@/shared/assets/imgs/people/girl2.jpg';
+import ImgGirl3 from '@/shared/assets/imgs/people/girl3.jpg';
 
 import { BAGS } from '@/shared/config/bags';
 const { design, development, management, marketing, hr } = BAGS;
