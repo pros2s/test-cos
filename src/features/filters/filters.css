@@ -20,7 +20,15 @@
   }
 
   button {
+    display: flex;
     padding: 9px 19px;
     border-radius: var(--border-radius);
   }
+}
+
+.actions__filter-count {
+  pointer-events: none;
+  margin-left: 4px;
+  font-size: 0.625rem;
+  line-height: 1.2;
 }

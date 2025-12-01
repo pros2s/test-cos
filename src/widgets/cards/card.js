@@ -1,4 +1,4 @@
-import { CARD_DATA } from './consts/config';
+import { CARD_DATA } from '@/shared/consts/api/data';
 import { createCard } from './utils/createCard';
 
 export const cards = () => {
