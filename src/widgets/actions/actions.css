@@ -1,8 +1,9 @@
 .actions {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
   gap: 102px;
+  align-items: center;
+  justify-content: space-between;
+
   margin-top: 85px;
 }

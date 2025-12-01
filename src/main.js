@@ -1,5 +1,5 @@
-import { cards } from '@/widgets/cards';
+import { cards } from "@/widgets/cards";
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   cards();
 });

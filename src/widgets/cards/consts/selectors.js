@@ -1,1 +1,1 @@
-export const cardsBlockSelector = '#cards-block'
+export const cardsBlockSelector = "#cards-block";
