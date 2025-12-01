@@ -1,13 +1,13 @@
 .light {
+  --bg: #000;
   --color-primary: #000;
   --color-secondary: #9a9ca5;
   --color-active: #ff3f3a;
-
   --border-color: #d7dadd;
-
   --success: #03cea4;
   --info: #5a87fc;
   --warning: #f89828;
   --error: #f52f6e;
   --dev: #7772f1;
+  --danger: #ff4242;
 }
