@@ -1,10 +1,10 @@
-import { cardsBlockSelector } from '..//consts/selectors';
+import { CARDS_SELECTOR } from '@/shared/consts/selectors/cards';
 import { getCardBagColor } from './getCardBagColor';
 
 export const createCard = (card) => {
   const { img, name, bag, price, author } = card;
 
-  const cardsBlock = document.querySelector(cardsBlockSelector);
+  const cardsBlock = document.querySelector(CARDS_SELECTOR);
 
   const cardBlock = document.createElement('div');
   cardBlock.className = 'cards__elem';
