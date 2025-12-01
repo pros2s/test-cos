@@ -1,0 +1,10 @@
+.load {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  margin: 80px auto 0;
+
+  font-weight: 700;
+  line-height: 160%;
+}

@@ -1,33 +1,32 @@
 /* imports */
-@import url('./themes.css');
-@import url('./vars.css');
+@import './themes.css';
+@import './vars.css';
 
-@import url('../src/pages/course/course.css');
-@import url('../src/widgets/actions/actions.css');
-@import url('../src/widgets/cards/cards.css');
+@import '../src/pages/course/course.css';
+@import '../src/widgets/actions/actions.css';
+@import '../src/widgets/cards/cards.css';
 
-@import url('../src/features/filters/filters.css');
-@import url('../src/features/search/search.css');
+@import '../src/features/filters/filters.css';
+@import '../src/features/search/search.css';
+@import '../src/features/load/load.css';
 
 @font-face {
-  font-family: 'Lato';
-  src: url('../src/shared/assets/fonts/Lato-Regular.ttf');
+  font-family: Lato;
   font-weight: 400;
   font-style: normal;
+  src: url('../src/shared/assets/fonts/Lato-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('../src/shared/assets/fonts/Lato-Bold.ttf');
+  font-family: Lato;
   font-weight: 700;
-  font-style: bold;
+  src: url('../src/shared/assets/fonts/Lato-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('../src/shared/assets/fonts/Lato-Black.ttf');
+  font-family: Lato;
   font-weight: 900;
-  font-style: normal;
+  src: url('../src/shared/assets/fonts/Lato-Black.ttf');
 }
 
 /* reset everything */
@@ -35,7 +34,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Lato', Arial;
+  font-family: Lato, Arial;
   font-size: 16px;
 }
 
@@ -47,15 +46,15 @@
 
 /* prevent iOS font size change */
 html {
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* reset body line-height */
 body {
   min-height: 100vh;
   line-height: 1;
-  text-rendering: optimizeSpeed;
   color: var(--color-primary);
+  text-rendering: optimizespeed;
 }
 
 /* all media elements set to block and full width */
@@ -83,8 +82,8 @@ select {
 
 /* collapse table */
 table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 /* assign button hover state */
@@ -92,7 +91,9 @@ button,
 [role='button'] {
   cursor: pointer;
   background-color: transparent;
+
   -webkit-tap-highlight-color: transparent;
+
   &:focus {
     outline: 0;
   }
@@ -103,6 +104,7 @@ a {
   cursor: pointer;
   color: inherit;
   text-decoration: inherit;
+
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -139,35 +141,33 @@ ul {
 [type='week'],
 textarea,
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   width: 100%;
+  appearance: none;
+
   &:focus {
     outline: 0;
   }
 }
 
 /* reset firefox placeholder opacity */
-::-moz-placeholder {
+::placeholder {
   opacity: 1;
 }
 
 /* reset textarea style */
 textarea {
-  /* move the label to the top */
-  vertical-align: top;
-
   /* turn off scroll bars in IE unless needed */
   overflow: auto;
+
+  /* move the label to the top */
+  vertical-align: top;
 }
 
 /* reset checkbox and radio style */
 [type='checkbox'],
 [type='radio'] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
+
   &:focus {
     outline: 0;
   }
@@ -182,9 +182,9 @@ textarea {
   *,
   *::before,
   *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
 }
