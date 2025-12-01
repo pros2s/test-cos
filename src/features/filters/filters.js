@@ -18,7 +18,7 @@ export const filters = () => {
 
     if (!curFilterBag) return;
 
-    setFilterActiveClass(curFilterBag);
+    setFilterActiveClass(curFilterType);
     filterCardList(curFilterBag);
   });
 };
