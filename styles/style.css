@@ -4,27 +4,28 @@
 
 @import url('../src/pages/course/course.css');
 @import url('../src/widgets/actions/actions.css');
+@import url('../src/widgets/cards/cards.css');
 
 @import url('../src/features/filters/filters.css');
 @import url('../src/features/search/search.css');
 
 @font-face {
   font-family: 'Lato';
-  src: url('src/assets/fonts/Lato-Regular.ttf');
+  src: url('../src/shared/assets/fonts/Lato-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('src/assets/fonts/Lato-Bold.ttf');
+  src: url('../src/shared/assets/fonts/Lato-Bold.ttf');
   font-weight: 700;
   font-style: bold;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('src/assets/fonts/Lato-Black.ttf');
+  src: url('../src/shared/assets/fonts/Lato-Black.ttf');
   font-weight: 900;
   font-style: normal;
 }

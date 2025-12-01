@@ -4,4 +4,10 @@
   --color-active: #ff3f3a;
 
   --border-color: #d7dadd;
+
+  --success: #03cea4;
+  --info: #5a87fc;
+  --warning: #f89828;
+  --error: #f52f6e;
+  --dev: #7772f1;
 }
