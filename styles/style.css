@@ -3,12 +3,6 @@
 @import './vars.css';
 
 @import '../src/pages/course/course.css';
-@import '../src/widgets/actions/actions.css';
-@import '../src/widgets/cards/cards.css';
-
-@import '../src/features/filters/filters.css';
-@import '../src/features/search/search.css';
-@import '../src/features/load/load.css';
 
 @font-face {
   font-family: Lato;

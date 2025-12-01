@@ -1,3 +1,6 @@
+@import '../../features/filters/filters.css';
+@import '../../features/search/search.css';
+
 .actions {
   display: flex;
   flex-wrap: wrap;

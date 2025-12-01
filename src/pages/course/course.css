@@ -1,3 +1,8 @@
+@import '../../widgets/actions/actions.css';
+@import '../../widgets/cards/cards.css';
+
+@import '../../features/load/load.css';
+
 .container {
   display: flex;
   flex-direction: column;

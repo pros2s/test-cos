@@ -1,4 +1,4 @@
-import { filtersElemSelector, filtersSelector } from '@/features/filters/consts/selectors/filters';
+import { filtersSelector } from '@/features/filters/consts/selectors/filters';
 import { filterCardList } from '@/features/filters/utils/filterCardList';
 
 import { BAGS } from '@/shared/config/bags';
@@ -8,7 +8,6 @@ import { setFiltersCount } from './utils/setFiltersCount';
 
 export const filters = () => {
   const filtersBlock = document.querySelector(filtersSelector);
-  const filterElems = filtersBlock.querySelectorAll(filtersElemSelector);
 
   setFiltersCount(filtersBlock);
 
@@ -19,7 +18,7 @@ export const filters = () => {
 
     if (!curFilterBag) return;
 
-    setFilterActiveClass(filterElems, currentFilter);
+    setFilterActiveClass(curFilterBag);
     filterCardList(curFilterBag);
   });
 };

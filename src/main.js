@@ -1,9 +1,5 @@
-import { filters } from '@/features/filters';
-import { search } from '@/features/search';
-import { cards } from '@/widgets/cards';
+import { course } from '@/pages/course';
 
 document.addEventListener('DOMContentLoaded', () => {
-  cards();
-  filters();
-  search();
+  course();
 });

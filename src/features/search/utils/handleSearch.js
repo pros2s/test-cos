@@ -1,3 +1,4 @@
+import { setFilterActiveClass } from '@/features/filters/utils/setFilterActiveClass';
 import { CARD_ELEMENT_SELECTOR, CARD_NAME_SELECTOR, CARDS_SELECTOR } from '@/shared/consts/selectors/cards';
 import { cardToggleByMatch } from '@/shared/utils/cardToggleByMatch';
 import { debounce } from '@/shared/utils/debounce';
@@ -9,6 +10,9 @@ export const handleSearch = () => {
   return debounce(
     (value) =>
       cardsElems.forEach((elem) => {
+        // немного костыльно - борюсь с отсутствием стейтменеджера )
+        setFilterActiveClass('all');
+
         const elemName = elem.querySelector(CARD_NAME_SELECTOR);
         const elemText = elemName?.textContent.toLowerCase();
 
