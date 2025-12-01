@@ -4,29 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Test cos</title>
   </head>
-  <body>
+  <body class="light">
     <main class="container">
       <header class="header">
         <h2 class="header__subtitle">Enjoy your studying!</h2>
         <h1 class="header__title">Our online courses</h1>
       </header>
 
-      <section class="filters">
-        <ul class="filters__elems">
-          <li class="filters__elem">All</li>
-          <li class="filters__elem">Marketing</li>
-          <li class="filters__elem">Management</li>
-          <li class="filters__elem">HR & Recruting</li>
-          <li class="filters__elem">Design</li>
-          <li class="filters__elem">Development</li>
+      <section class="actions">
+        <ul class="actions__filters">
+          <li class="actions__filter active"><button>All</button></li>
+          <li class="actions__filter"><button>Marketing</button></li>
+          <li class="actions__filter"><button>Management</button></li>
+          <li class="actions__filter"><button>HR & Recruting</button></li>
+          <li class="actions__filter"><button>Design</button></li>
+          <li class="actions__filter"><button>Development</button></li>
         </ul>
 
-        <input class="filters__search" type="text" placeholder="Search course..." />
+        <div class="actions__search">
+          <input class="actions__input" name="search" type="text" placeholder="Search course..." />
+          <img src="src/shared/assets/icons/search.svg" alt="Search" />
+        </div>
       </section>
     </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

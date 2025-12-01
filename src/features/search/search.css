@@ -1,0 +1,15 @@
+.actions__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 11px 16px;
+  min-width: 315px;
+  line-height: 150%;
+  font-size: 0.875rem;
+
+  input::placeholder {
+    color: var(--color-secondary);
+  }
+}

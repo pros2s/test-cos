@@ -1,0 +1,8 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 102px;
+  margin-top: 85px;
+}

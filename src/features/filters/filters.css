@@ -1,0 +1,25 @@
+.actions__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.actions__filter {
+  font-size: 1rem;
+  font-weight: 700;
+  list-style: none;
+  color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  line-height: 160%;
+
+  &.active {
+    color: var(--color-active);
+
+    border: 1px solid var(--color-active);
+  }
+
+  button {
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+  }
+}
